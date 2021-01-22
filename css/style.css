@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background-color: #f5f8fa;
+  width: 100%;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 4em;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2.5em;
+}
+
+span {
+  font-size: 1.2em;
+}
+ /* header */
+ .container {
+   width: 80%;
+   margin: 0 auto;
+ }
+
+.container.relative {
+  position: relative;
+}
+
+.header_logo {
+  float: left;
+  width: 50%;
+}
+ul.menu {
+  position: absolute;
+  right: 0;
+  margin-top: 5px;
+}
+ul.menu li {
+  list-style: none;
+  display: inline;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+div.header_logo,
+ul.menu {
+  padding: 15px 0 15px 0;
+  line-height: 10px;
+}
+
+/* banner header */
+div.header_banner {
+  height: 80vh;
+}
+
+div.header_banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+div.labarra {
+  position: absolute;
+  bottom: 8%;
+  width: 100%;
+  height: 10vh;
+  background-color:  #9aead6;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+}
+
+div.banner_text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40%;
+}
+.banner_text h1 {
+  line-height: 70px;
+  padding-bottom: 30px;
+}
+.banner_text span {
+  padding: 10px 0 20px 0;
+  line-height: 25px;
+}
+/* fine header */
+
+/* main 3 col */
+div.text_main {
+  text-align: center;
+  padding: 80px 0 30px 0;
+  width: 60%;
+  margin: 0 auto;
+}
+
+div.col3 {
+  background-color: white;
+  border: 1px solid lightgrey;
+  box-shadow: 1px 1px 3px lightgray;
+  padding: 30px;
+}
+
+.orizontal {
+  width: 100%;
+  height: 50vh;
+  margin-bottom: 60px;
+}
+
+.vertical {
+  float: left;
+  width: 31.1%;
+  height: 80vh;
+  margin-right: 50px;
+  margin-bottom: 60px;
+}
+
+.no_margin {
+  margin: 0;
+}
