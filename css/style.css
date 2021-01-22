@@ -135,3 +135,70 @@ div.col3 {
 .no_margin {
   margin: 0;
 }
+
+/* griglia */
+.container100 {
+  width: 100%;
+  /* height: 80vh; */
+  background-color: blue;
+}
+
+.griglia {
+  text-align: center;
+}
+
+.square {
+  display: inline-block;
+  width: 24.8%;
+  height: 300px;
+  background-color: lightblue;
+}
+
+div.row.first {
+  margin-top: 50px;
+}
+
+div.row.second {
+  padding-bottom: 50px;
+}
+/* fine griglia */
+
+/* numero */
+.custumers, .loghi {
+  float: left;
+  text-align: center;
+  width: 50%;
+  height: 200px;
+  background-color: green;
+}
+
+div.text {
+  margin-top: 50px;
+}
+
+/* loghi */
+.logo {
+  display: inline-block;
+  width: 20%;
+  height: 50px;
+  background-color: orange;
+}
+/* fine loghi */
+
+div.grow {
+
+}
+
+div.text_grow,
+div.pic_right {
+  float: left;
+}
+
+div.text_grow {
+  width: 50%;
+}
+
+div.pic_right img {
+  width: 50%;
+  margin:50px 0 0 70%;
+}
