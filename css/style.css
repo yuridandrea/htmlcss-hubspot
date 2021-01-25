@@ -30,27 +30,89 @@ h2 {
 span {
   font-size: 1.2em;
 }
+
+li {
+  list-style: none;
+}
  /* header */
  .container {
    width: 80%;
    margin: 0 auto;
  }
+/* fixed */
+div.fixed {
+  position: fixed;
+  top: 0;
+  height: 7vh;
+  width: 100%;
+  border-bottom: 1px solid black;
+  background-color:  #edfffd;
+  z-index: 999;
+}
 
+div.lenguageselect, div.buttons {
+  float: left;
+  width: 50%;
+  margin-top: 20px;
+}
+
+div.lenguageselect :last-child {
+  margin-left: 10px;
+}
+
+div.buttons li {
+  display: inline-block;
+}
+
+li.btn {
+  padding: 4px 2px;
+  line-height: 15px;
+  border-radius: 5px;
+}
+
+div.buttons ul {
+  position: absolute;
+  right: 10px;
+}
+
+.btn.empty {
+  border: 1px solid #ff7a59;
+  margin: 0 5px 0 5px;
+}
+
+.btn.full {
+  background-color: #ff7a59;
+  border: 1px solid #ff7a59;
+}
+
+.full a {
+  color: white;
+}
+
+li.empty a {
+  color: #ff7a59;
+}
+/* fine fixed */
 .container.relative {
   position: relative;
+}
+
+.space {
+  margin-top: 8vh;
 }
 
 .header_logo {
   float: left;
   width: 50%;
 }
+
 ul.menu {
   position: absolute;
   right: 0;
   margin-top: 5px;
 }
+
 ul.menu li {
-  list-style: none;
   display: inline;
   padding: 0 20px;
 }
@@ -79,9 +141,9 @@ div.header_banner img {
 
 div.labarra {
   position: absolute;
-  bottom: 8%;
+  bottom: 5%;
   width: 100%;
-  height: 10vh;
+  height: 7vh;
   background-color:  #9aead6;
   border-top: 4px solid black;
   border-bottom: 4px solid black;
@@ -97,9 +159,17 @@ div.banner_text {
   line-height: 70px;
   padding-bottom: 30px;
 }
+
+div.banner_text p {
+  padding-bottom: 30px;
+}
+
 .banner_text span {
-  padding: 10px 0 20px 0;
-  line-height: 25px;
+  display: inline-block;
+}
+span.btn.full {
+  padding: 20px;
+  border-radius: 10px;
 }
 /* fine header */
 
@@ -186,7 +256,6 @@ div.text {
 /* fine loghi */
 
 div.grow {
-
 }
 
 div.text_grow,
@@ -201,4 +270,52 @@ div.text_grow {
 div.pic_right img {
   width: 50%;
   margin:50px 0 0 70%;
+}
+
+/* footer */
+.container100.foot {
+  position: absolute;
+  background-color: blue;
+}
+
+div.list ul {
+  float: left;
+  width: 25%;
+  padding: 25px 0 25px 0;
+}
+
+div.lenguage li {
+  position: relative;
+  left: 30%;
+  float: left;
+  padding: 20px;
+}
+
+footer hr {
+  width: 100%;
+  border: 1px solid black;
+}
+
+div.left, div.right {
+  float: left;
+  width: 50%;
+}
+
+div.left img {
+  padding-top: 20px;
+  width: 20%;
+}
+
+div.left p {
+  padding-top: 5px;
+}
+
+div.right ul {
+  padding: 25px 0 0 70%;
+
+}
+
+div.right li {
+  display: inline-block;
+  margin-right: 5px;
 }
