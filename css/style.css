@@ -7,6 +7,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  color: #2d3e50;
   background-color: #f5f8fa;
   width: 100%;
 }
@@ -131,6 +132,7 @@ div.header_logo,
 ul.menu {
   padding: 15px 0 15px 0;
   line-height: 10px;
+  font-size: 12px;
 }
 
 /* banner header */
@@ -204,6 +206,17 @@ div.col3 {
   border: 1px solid lightgrey;
   box-shadow: 1px 1px 3px lightgray;
   padding: 30px;
+}
+
+div.vertical li::before {
+  font-family: FontAwesome;
+  content: "\f058";
+  padding-right: 5px;
+  color: #ff7a59;
+}
+
+.vertical li::after {
+  content: attr(f058);
 }
 
 .col3.orizontal > div {
@@ -318,9 +331,10 @@ div.vertical span.btn.full {
   border-radius: 5px;
 }
 /* griglia */
-.container100 {
+.container100_linear {
   width: 100%;
   background-image: linear-gradient(45deg,#00a4bd,#00bda5);
+  min-height: 550px;
 }
 
 .griglia {
@@ -345,22 +359,21 @@ div.vertical span.btn.full {
 
 div.square {
   border-right: 1px solid white;
-}
-
-div.forth {
-  border: none;
+  border-bottom: 1px solid white;
+  padding: 20px 0;
 }
 
 div.row.first {
   margin-top: 50px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid white;
 }
 
-div.row.second {
-  padding:20px 0 200px 0;
+div.row.second div.square {
+  border-bottom: none;
 }
 
+div.row .square:last-child {
+  border-right: none;
+}
 /* fine griglia */
 
 /* numero */
@@ -383,34 +396,31 @@ div.loghi div.row.first {
 .logo {
   display: inline-block;
   width: 20%;
+  vertical-align: middle;
 }
 
 div.logo img {
   width: 80%;
 }
 /* fine loghi */
-
-div.grow {
+div.text_grow p {
+ margin: 20px 0 80px 0;
 }
 
 div.text_grow,
 div.pic_right {
   float: left;
-}
-
-div.text_grow {
   width: 50%;
 }
 
 div.pic_right img {
   width: 50%;
-  margin:50px 0 0 70%;
+  margin:50px 0 50px 40%;
 }
 
 /* footer */
-.container100.foot {
-  position: absolute;
-  background-color: blue;
+.foot {
+  background-color: #2d3e50;
 }
 
 div.list ul {
@@ -421,7 +431,7 @@ div.list ul {
 
 div.lenguage li {
   position: relative;
-  left: 30%;
+  left: 25%;
   float: left;
   padding: 20px;
 }
@@ -447,10 +457,50 @@ div.left p {
 
 div.right ul {
   padding: 25px 0 0 70%;
-
 }
 
 div.right li {
   display: inline-block;
   margin-right: 5px;
 }
+
+footer ul li:first-child {
+  padding-bottom: 8px;
+}
+
+footer ul.row .btn.full{
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: white;
+  border-color: white;
+}
+
+
+footer a, footer p {
+  color: white;
+  font-size: 12px;
+}
+
+footer hr {
+  border-color: white;
+}
+
+div.copyright, div.right {
+  margin-bottom: 50px;
+}
+
+.list ul:last-child li:last-child a {
+  color: #2d3e50;
+}
+ .social {
+   position: absolute;
+   right: 13%;
+   top: 75%;
+   color: white;
+ }
+
+ .social i {
+   padding: 0 5px;
+ }
